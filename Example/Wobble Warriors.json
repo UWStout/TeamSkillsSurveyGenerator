@@ -1,0 +1,33 @@
+"Choices": {
+  "1": {
+	"Display": "Anna Thiele"
+  },
+  "2": {
+	"Display": "Katie Monte"
+  },
+  "3": {
+	"Display": "Brian Bauch"
+  },
+  "4": {
+	"Display": "Bryce Niles"
+  },
+  "5": {
+	"Display": "Jaden Schneider"
+  },
+  "6": {
+	"Display": "Olivia LaValley"
+  },
+  "7": {
+	"Display": "Trent LeClair"
+  }
+},
+"ChoiceOrder": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+],
+"NextChoiceId": 8

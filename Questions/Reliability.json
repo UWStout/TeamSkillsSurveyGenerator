@@ -1,0 +1,91 @@
+{
+  "SurveyID": "SV_cAOa80tDAZqCZEy",
+  "Element": "SQ",
+  "PrimaryAttribute": "@QID@",
+  "SecondaryAttribute": "Rate each member of your team on how reliably he or she does the work that has been assigned. In...",
+  "TertiaryAttribute": null,
+  "Payload": {
+	"QuestionText": "Rate each member of your team on how reliably he or she does the work that has been assigned.&nbsp; In addition to rating your teammates, you should also assess yourself where you see your own name.&nbsp; You do not need to rate any individual on this list who either didn't have responsibilities on your team for this sprint, or whom you didn't work closely enough with to be able to assess their contributions.",
+	"DefaultChoices": false,
+	"DataExportTag": "@QTag@",
+	"QuestionType": "Matrix",
+	"Selector": "Likert",
+	"SubSelector": "SingleAnswer",
+	"DataVisibility": {
+	  "Private": false,
+	  "Hidden": false
+	},
+	"Configuration": {
+	  "QuestionDescriptionOption": "UseText",
+	  "TextPosition": "inline",
+	  "ChoiceColumnWidth": 25,
+	  "RepeatHeaders": "none",
+	  "WhiteSpace": "OFF",
+	  "MobileFirst": true
+	},
+	"QuestionDescription": "Rate each member of your team on how reliably he or she does the work that has been assigned. In...",
+	"DisplayLogic": {
+	  "0": {
+		"0": {
+		  "ChoiceLocator": "q://QID2/SelectableChoice/@TeamID@",
+		  "Description": "<span class=\"ConjDesc\">If</span> <span class=\"QuestionDesc\">What team(s) have you been working with this sprint? You may choose more than one.</span> <span class=\"LeftOpDesc\">@TeamName@</span> <span class=\"OpDesc\">Is Selected</span> ",
+		  "LeftOperand": "q://QID2/SelectableChoice/@TeamID@",
+		  "LogicType": "Question",
+		  "Operator": "Selected",
+		  "QuestionID": "QID2",
+		  "QuestionIDFromLocator": "QID2",
+		  "QuestionIsInLoop": "no",
+		  "Type": "Expression"
+		},
+		"1": {
+		  "ChoiceLocator": "q://QID4/SelectableChoice/1",
+		  "Conjuction": "And",
+		  "Description": "<span class=\"ConjDesc\">And</span> <span class=\"QuestionDesc\">Have any of your teammates ever been unreliable in completing their work as assigned?</span> <span class=\"LeftOpDesc\">Yes</span> <span class=\"OpDesc\">Is Selected</span> ",
+		  "LeftOperand": "q://QID4/SelectableChoice/1",
+		  "LogicType": "Question",
+		  "Operator": "Selected",
+		  "QuestionID": "QID4",
+		  "QuestionIDFromLocator": "QID4",
+		  "QuestionIsInLoop": "no",
+		  "Type": "Expression"
+		},
+		"Type": "If"
+	  },
+	  "Type": "BooleanExpression",
+	  "inPage": false
+	},
+	"Validation": {
+	  "Settings": {
+		"ForceResponse": "OFF",
+		"ForceResponseType": "ON",
+		"Type": "None"
+	  }
+	},
+	"GradingData": [],
+	"Language": [],
+	@TeamMembers@,
+	"Answers": {
+	  "1": {
+		"Display": "Never does the assigned work"
+	  },
+	  "2": {
+		"Display": "Rarely does the assigned work"
+	  },
+	  "3": {
+		"Display": "Usually does the assigned work"
+	  },
+	  "4": {
+		"Display": "Always does the assigned work"
+	  }
+	},
+	"AnswerOrder": [
+	  1,
+	  2,
+	  3,
+	  4
+	],
+	"NextAnswerId": 5,
+	"ChoiceDataExportTags": false,
+	"QuestionID": "@QID@"
+  }
+}

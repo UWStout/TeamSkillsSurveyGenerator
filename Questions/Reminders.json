@@ -1,0 +1,91 @@
+{
+  "SurveyID": "SV_cAOa80tDAZqCZEy",
+  "Element": "SQ",
+  "PrimaryAttribute": "@QID@",
+  "SecondaryAttribute": "Rate each member of your team on how often you or another teammate have needed to remind them to...",
+  "TertiaryAttribute": null,
+  "Payload": {
+	"QuestionText": "Rate each member of your team on how often you or another teammate have needed to remind them to do the work that has been assigned.  In addition to rating your teammates, you should also assess yourself where you see your own name.&nbsp; You do not need to rate any individual on this list who either didn't have responsibilities on your team for this sprint, or whom you didn't work closely enough with to be able to assess their contributions.",
+	"DefaultChoices": false,
+	"DataExportTag": "@QTag@",
+	"QuestionType": "Matrix",
+	"Selector": "Likert",
+	"SubSelector": "SingleAnswer",
+	"DataVisibility": {
+	  "Private": false,
+	  "Hidden": false
+	},
+	"Configuration": {
+	  "QuestionDescriptionOption": "UseText",
+	  "TextPosition": "inline",
+	  "ChoiceColumnWidth": 25,
+	  "RepeatHeaders": "none",
+	  "WhiteSpace": "OFF",
+	  "MobileFirst": true
+	},
+	"QuestionDescription": "Rate each member of your team on how often you or another teammate have needed to remind them to...",
+	"DisplayLogic": {
+	  "0": {
+		"0": {
+		  "ChoiceLocator": "q://QID2/SelectableChoice/@TeamID@",
+		  "Description": "<span class=\"ConjDesc\">If</span> <span class=\"QuestionDesc\">What team(s) have you been working with this sprint? You may choose more than one.</span> <span class=\"LeftOpDesc\">@TeamName@</span> <span class=\"OpDesc\">Is Selected</span> ",
+		  "LeftOperand": "q://QID2/SelectableChoice/@TeamID@",
+		  "LogicType": "Question",
+		  "Operator": "Selected",
+		  "QuestionID": "QID2",
+		  "QuestionIDFromLocator": "QID2",
+		  "QuestionIsInLoop": "no",
+		  "Type": "Expression"
+		},
+		"1": {
+		  "ChoiceLocator": "q://QID6/SelectableChoice/1",
+		  "Conjuction": "And",
+		  "Description": "<span class=\"ConjDesc\">And</span> <span class=\"QuestionDesc\">Have any of your teammates ever needed reminders to do their assigned work?</span> <span class=\"LeftOpDesc\">Yes</span> <span class=\"OpDesc\">Is Selected</span> ",
+		  "LeftOperand": "q://QID6/SelectableChoice/1",
+		  "LogicType": "Question",
+		  "Operator": "Selected",
+		  "QuestionID": "QID6",
+		  "QuestionIDFromLocator": "QID6",
+		  "QuestionIsInLoop": "no",
+		  "Type": "Expression"
+		},
+		"Type": "If"
+	  },
+	  "Type": "BooleanExpression",
+	  "inPage": false
+	},
+	@TeamMembers@,
+	"Validation": {
+	  "Settings": {
+		"ForceResponse": "OFF",
+		"ForceResponseType": "ON",
+		"Type": "None"
+	  }
+	},
+	"GradingData": [],
+	"Language": [],
+	"Answers": {
+	  "1": {
+		"Display": "Always needs reminding"
+	  },
+	  "2": {
+		"Display": "Usually needs reminding"
+	  },
+	  "3": {
+		"Display": "Rarely needs reminding"
+	  },
+	  "4": {
+		"Display": "Never needs reminding"
+	  }
+	},
+	"AnswerOrder": [
+	  1,
+	  2,
+	  3,
+	  4
+	],
+	"NextAnswerId": 5,
+	"ChoiceDataExportTags": false,
+	"QuestionID": "@QID@"
+  }
+}

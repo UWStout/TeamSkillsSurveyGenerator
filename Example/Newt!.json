@@ -1,0 +1,57 @@
+"Choices": {
+  "1": {
+	"Display": "Anna Thiele"
+  },
+  "2": {
+	"Display": "Emyee Fox"
+  },
+  "3": {
+	"Display": "Harrison Kelly"
+  },
+  "4": {
+	"Display": "Jon Gilleland"
+  },
+  "5": {
+	"Display": "Kali Gardner"
+  },
+  "6": {
+	"Display": "Katie Monte"
+  },
+  "7": {
+	"Display": "William Hollinger"
+  },
+  "8": {
+	"Display": "Anton Nikitin"
+  },
+  "9": {
+	"Display": "Bryce Cernohous-Schrader"
+  },
+  "10": {
+	"Display": "Reece Nadle"
+  },
+  "11": {
+	"Display": "Rodger Lugo Cruz"
+  },
+  "12": {
+	"Display": "Tyler Garcia"
+  },
+  "13": {
+	"Display": "Yair Macagon"
+  }
+},
+"ChoiceOrder": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+],
+"NextChoiceId": 14

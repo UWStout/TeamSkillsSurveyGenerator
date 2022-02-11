@@ -1,0 +1,55 @@
+{
+  "SurveyID": "SV_cAOa80tDAZqCZEy",
+  "Element": "SQ",
+  "PrimaryAttribute": "@QID@",
+  "SecondaryAttribute": "Which teammates, if any, have you most often observed actively assisting you or others? (Choose n...",
+  "TertiaryAttribute": null,
+  "Payload": {
+	"QuestionText": "Which teammates, if any, have you most often observed actively assisting you or others?&nbsp; (Choose no more than two.)",
+	"DefaultChoices": false,
+	"DataExportTag": "@QTag@",
+	"QuestionType": "MC",
+	"Selector": "MAVR",
+	"SubSelector": "TX",
+	"Configuration": {
+	  "QuestionDescriptionOption": "UseText"
+	},
+	"QuestionDescription": "Which teammates, if any, have you most often observed actively assisting you or others? (Choose n...",
+	"DisplayLogic": {
+	  "0": {
+		"0": {
+		  "ChoiceLocator": "q://QID2/SelectableChoice/@TeamID@",
+		  "Description": "<span class=\"ConjDesc\">If</span> <span class=\"QuestionDesc\">What team(s) have you been working with this sprint? You may choose more than one.</span> <span class=\"LeftOpDesc\">@TeamName@</span> <span class=\"OpDesc\">Is Selected</span> ",
+		  "LeftOperand": "q://QID2/SelectableChoice/@TeamID@",
+		  "LogicType": "Question",
+		  "Operator": "Selected",
+		  "QuestionID": "QID2",
+		  "QuestionIDFromLocator": "QID2",
+		  "QuestionIsInLoop": "no",
+		  "Type": "Expression"
+		},
+		"Type": "If"
+	  },
+	  "Type": "BooleanExpression",
+	  "inPage": false
+	},
+	@TeamMembers@,
+	"Validation": {
+	  "Settings": {
+		"ForceResponse": "OFF",
+		"ForceResponseType": "ON",
+		"Type": "ChoiceRange",
+		"MinChoices": "0",
+		"MaxChoices": "2"
+	  }
+	},
+	"NextAnswerId": 3,
+	"GradingData": [],
+	"Language": [],
+	"QuestionID": "@QID@",
+	"DataVisibility": {
+	  "Private": false,
+	  "Hidden": false
+	}
+  }
+}

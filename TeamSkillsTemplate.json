@@ -1,0 +1,527 @@
+{
+  "SurveyEntry": {
+    "SurveyID": "SV_cAOa80tDAZqCZEy",
+    "SurveyName": "GDD 450 Tetzlaff F2021, Team Skills - template",
+    "SurveyDescription": null,
+    "SurveyOwnerID": "UR_6o17r1BLuZ6W0st",
+    "SurveyBrandID": "uwstout",
+    "DivisionID": null,
+    "SurveyLanguage": "EN",
+    "SurveyActiveResponseSet": "RS_3auGAbnVIjWCsS2",
+    "SurveyStatus": "Inactive",
+    "SurveyStartDate": "0000-00-00 00:00:00",
+    "SurveyExpirationDate": "0000-00-00 00:00:00",
+    "SurveyCreationDate": "2022-01-31 11:10:47",
+    "CreatorID": "UR_6o17r1BLuZ6W0st",
+    "LastModified": "2022-02-10 10:23:54",
+    "LastAccessed": "0000-00-00 00:00:00",
+    "LastActivated": "0000-00-00 00:00:00",
+    "Deleted": null
+  },
+  "SurveyElements": [
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "BL",
+      "PrimaryAttribute": "Survey Blocks",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": [
+        {
+          "Type": "Default",
+          "Description": "Default Question Block",
+          "ID": "BL_bEIjXJs8pqbI0ex",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID1"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID2"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID3"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID4"
+            },
+            {
+              "Type": "Page Break"
+            },
+            @ReliabilityRefs@,
+            {
+              "Type": "Page Break"
+            },
+            @AssistOthersRefs@,
+            {
+              "Type": "Question",
+              "QuestionID": "QID5"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID6"
+            },
+            {
+              "Type": "Page Break"
+            },
+			@RemindersRefs@,
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID7"
+            },
+            {
+              "Type": "Page Break"
+            },
+            @AssistanceRefs@,
+            {
+              "Type": "Page Break"
+            },
+            @ListeningRefs@,
+            @ListeningRespondRefs@,
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID8"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        {
+          "Type": "Trash",
+          "Description": "Trash / Unused Questions",
+          "ID": "BL_6xpFcdruemioeXP",
+          "BlockElements": []
+        }
+      ]
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "FL",
+      "PrimaryAttribute": "Survey Flow",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Flow": [
+          {
+            "ID": "BL_bEIjXJs8pqbI0ex",
+            "Type": "Block",
+            "FlowID": "FL_2"
+          }
+        ],
+        "Properties": {
+          "Count": 4
+        },
+        "FlowID": "FL_1",
+        "Type": "Root"
+      }
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "RS",
+      "PrimaryAttribute": "RS_3auGAbnVIjWCsS2",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "SO",
+      "PrimaryAttribute": "Survey Options",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "BackButton": "false",
+        "SaveAndContinue": "true",
+        "SurveyProtection": "PublicSurvey",
+        "BallotBoxStuffingPrevention": "false",
+        "NoIndex": "Yes",
+        "SecureResponseFiles": "true",
+        "SurveyExpiration": "None",
+        "SurveyTermination": "DefaultMessage",
+        "Header": "",
+        "Footer": "",
+        "ProgressBarDisplay": "None",
+        "PartialData": "+1 week",
+        "ValidationMessage": null,
+        "PreviousButton": " ← ",
+        "NextButton": " → ",
+        "SkinLibrary": "uwstout",
+        "SkinType": "MQ",
+        "Skin": "uwstout1_new",
+        "NewScoring": 1,
+        "ProtectSelectionIds": true,
+        "SurveyTitle": "Online Survey Software | Qualtrics Survey Solutions",
+        "SurveyName": "Team Skills Survey",
+        "EOSMessage": null,
+        "ShowExportTags": "false",
+        "CollectGeoLocation": "false",
+        "SurveyMetaDescription": "The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today.",
+        "PasswordProtection": "No",
+        "AnonymizeResponse": "No",
+        "RefererCheck": "No",
+        "UseCustomSurveyLinkCompletedMessage": null,
+        "SurveyLinkCompletedMessage": null,
+        "SurveyLinkCompletedMessageLibrary": null,
+        "ResponseSummary": "No",
+        "EOSMessageLibrary": null,
+        "EOSRedirectURL": null,
+        "EmailThankYou": "false",
+        "ThankYouEmailMessageLibrary": null,
+        "ThankYouEmailMessage": null,
+        "ValidateMessage": "false",
+        "ValidationMessageLibrary": null,
+        "InactiveSurvey": null,
+        "PartialDeletion": null,
+        "PartialDataCloseAfter": "LastActivity",
+        "InactiveMessageLibrary": null,
+        "InactiveMessage": null,
+        "AvailableLanguages": {
+          "EN": []
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Q5rYaWzl4VIkia",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID1",
+      "SecondaryAttribute": "What is your name?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is your name?",
+        "DefaultChoices": false,
+        "DataExportTag": "Q1",
+        "QuestionID": "QID1",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What is your name?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID2",
+      "SecondaryAttribute": "What team(s) have you been working with this sprint? You may choose more than one.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What team(s) have you been working with this sprint?&nbsp; You may choose more than one.",
+        "DataExportTag": "Q2",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What team(s) have you been working with this sprint? You may choose more than one.",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+		@TeamChoices@,
+        "NextAnswerId": 1,
+        "QuestionID": "QID2",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID3",
+      "SecondaryAttribute": "Are you primarily an artist or a programmer?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Are you primarily an artist or a programmer?",
+        "DataExportTag": "Q3",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Are you primarily an artist or a programmer?",
+        "Choices": {
+          "1": {
+            "Display": "Artist"
+          },
+          "2": {
+            "Display": "Programmer"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID3",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID4",
+      "SecondaryAttribute": "Have any of your teammates ever been unreliable in completing their work as assigned?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Have any of your teammates ever been unreliable in completing their work as assigned?",
+        "DataExportTag": "Q4",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Have any of your teammates ever been unreliable in completing their work as assigned?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No, everyone on the team always does their work reliably."
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID4",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID5",
+      "SecondaryAttribute": "Give an example for each teammate that you selected in the previous question. (Who did they assis...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Give an example for each teammate that you selected in the previous question.&nbsp; (Who did they assist, what did they assist with, etc.)",
+        "DefaultChoices": false,
+        "DataExportTag": "Q5",
+        "QuestionType": "TE",
+        "Selector": "ML",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Give an example for each teammate that you selected in the previous question. (Who did they assis...",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        },
+        "QuestionID": "QID5",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID6",
+      "SecondaryAttribute": "Have any of your teammates ever needed reminders to do their assigned work?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Have any of your teammates ever needed reminders to do their assigned work?",
+        "DataExportTag": "Q6",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Have any of your teammates ever needed reminders to do their assigned work?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No, everyone on the team always does their work without needing reminders."
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID6"
+      }
+    },
+    {
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID7",
+      "SecondaryAttribute": "Have any of your teammates needed an unreasonable amount of assistance to complete their assigned...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Have any of your teammates needed an unreasonable amount of assistance to complete their assigned work?",
+        "DataExportTag": "Q7",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Have any of your teammates needed an unreasonable amount of assistance to complete their assigned...",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No, each member of the team rarely needs assistance."
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID7"
+      }
+    },
+	{
+      "SurveyID": "SV_cAOa80tDAZqCZEy",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID8",
+      "SecondaryAttribute": "Feel free to provide detailed comments regarding your teammates or clarify any of your answers to...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Feel free to provide detailed comments regarding your teammates or clarify any of your answers to the above questions.&nbsp; (This is optional.)",
+        "DefaultChoices": false,
+        "DataExportTag": "Q8",
+        "QuestionType": "TE",
+        "Selector": "ESTB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "InputWidth": 680,
+          "InputHeight": 101
+        },
+        "QuestionDescription": "Feel free to provide detailed comments regarding your teammates or clarify any of your answers to...",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        },
+        "QuestionID": "QID8"
+      }
+    },
+	@Reliability@,
+	@AssistOthers@,
+	@Reminders@,
+	@Assistance@,
+    @Listening@,
+    @ListeningRespond@
+  ]
+}

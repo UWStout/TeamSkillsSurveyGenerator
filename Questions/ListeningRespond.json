@@ -1,0 +1,55 @@
+{
+  "SurveyID": "SV_cAOa80tDAZqCZEy",
+  "Element": "SQ",
+  "PrimaryAttribute": "@QID@",
+  "SecondaryAttribute": "From your perspective, which teammates, if any, not only listen consistently but also respond app...",
+  "TertiaryAttribute": null,
+  "Payload": {
+	"QuestionText": "From your perspective, which teammates, if any, not only listen consistently but also respond appropriately when others are speaking?  (Choose up to two teammates who do this most consistently.)",
+	"DefaultChoices": false,
+	"DataExportTag": "@QTag@",
+	"QuestionType": "MC",
+	"Selector": "MAVR",
+	"SubSelector": "TX",
+	"DataVisibility": {
+	  "Private": false,
+	  "Hidden": false
+	},
+	"Configuration": {
+	  "QuestionDescriptionOption": "UseText"
+	},
+	"QuestionDescription": "From your perspective, which teammates, if any, not only listen consistently but also respond app...",
+	"DisplayLogic": {
+	  "0": {
+		"0": {
+		  "ChoiceLocator": "q://QID2/SelectableChoice/@TeamID@",
+		  "Description": "<span class=\"ConjDesc\">If</span> <span class=\"QuestionDesc\">What team(s) have you been working with this sprint? You may choose more than one.</span> <span class=\"LeftOpDesc\">@TeamName@</span> <span class=\"OpDesc\">Is Selected</span> ",
+		  "LeftOperand": "q://QID2/SelectableChoice/@TeamID@",
+		  "LogicType": "Question",
+		  "Operator": "Selected",
+		  "QuestionID": "QID2",
+		  "QuestionIDFromLocator": "QID2",
+		  "QuestionIsInLoop": "no",
+		  "Type": "Expression"
+		},
+		"Type": "If"
+	  },
+	  "Type": "BooleanExpression",
+	  "inPage": false
+	},
+	@TeamMembers@,
+	"Validation": {
+	  "Settings": {
+		"ForceResponse": "OFF",
+		"ForceResponseType": "ON",
+		"Type": "ChoiceRange",
+		"MinChoices": "0",
+		"MaxChoices": "2"
+	  }
+	},
+	"GradingData": [],
+	"Language": [],
+	"NextAnswerId": 3,
+	"QuestionID": "@QID@"
+  }
+}
