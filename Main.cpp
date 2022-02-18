@@ -31,7 +31,7 @@ public:
 struct Question
 {
 public:
-    int id;
+    int baseID;
     string name;
     string templateJSON;
 };
@@ -50,7 +50,7 @@ void replaceAll(string& source, const string& original, const string& replacemen
 string populateTemplate(const Question& question, const Team& team)
 {
     string templateString { question.templateJSON };
-    replaceAll(templateString, "@QID@", "QID_Team" + to_string(team.id) + "." + to_string(question.id));
+    replaceAll(templateString, "@QID@", "QID" + to_string(question.baseID + team.id));
     replaceAll(templateString, "@QTag@", question.name + "/" + team.name);
     replaceAll(templateString, "@TeamID@", to_string(team.id));
     replaceAll(templateString, "@TeamName@", team.name);
@@ -178,7 +178,7 @@ int main(int argc, char* argv[])
     // Read template for a question reference in the question list.
     string baseQuestionRefTemplate { readFromFile("QuestionRef.json") };
 
-    int id { 1 };
+    int baseID { 20 }; // allow up to 20 questions that aren't different for each taem.
 
     // Iterate templates in "Questions" directory,.
     for (const auto& file : std::filesystem::directory_iterator("./Questions"))
@@ -187,12 +187,12 @@ int main(int argc, char* argv[])
         string templateName { getBaseFileName(file.path().string()) };
 
         // Read each template and populate it for all teams, then replace the placeholder string in the root template.
-        Question qTemplate { id, templateName, readFromFile(file.path()) };
-        Question questionRefTemplate { id, templateName, baseQuestionRefTemplate };
+        Question qTemplate { baseID, templateName, readFromFile(file.path()) };
+        Question questionRefTemplate { baseID, templateName, baseQuestionRefTemplate };
         replaceAll(rootTemplate, "@" + templateName + "@", populateForAllTeams(qTemplate, teams));
         replaceAll(rootTemplate, "@" + templateName + "Refs@", populateForAllTeams(questionRefTemplate, teams));
 
-        id++;
+        baseID += teams.size();
     }
 
     // Write out the final file to the specified output file.
