@@ -2,10 +2,10 @@
   "SurveyID": "SV_cAOa80tDAZqCZEy",
   "Element": "SQ",
   "PrimaryAttribute": "@QID@",
-  "SecondaryAttribute": "Rate each member of your team on the degree to which they have needed your assistance or the...",
+  "SecondaryAttribute": "Engagement",
   "TertiaryAttribute": null,
   "Payload": {
-	"QuestionText": "Rate each member of your team on the degree to which they have needed your assistance or the assistance of others to complete assigned work.  In addition to rating your teammates, you should also assess yourself where you see your own name. You do not need to rate any individual on this list who either didn't have responsibilities on your team for this sprint, or whom you didn't work closely enough with to be able to assess their contributions.",
+	"QuestionText": "Rate each member of your team on how well they engage with the team during team meetings and converations. In addition to rating your teammates, you should also assess yourself where you see your own name. You do not need to rate any individual on this list who either didn't have responsibilities on your team for this sprint, or whom you didn't work closely enough with to be able to assess this.",
 	"DefaultChoices": false,
 	"DataExportTag": "@QTag@",
 	"QuestionType": "Matrix",
@@ -23,7 +23,7 @@
 	  "WhiteSpace": "OFF",
 	  "MobileFirst": true
 	},
-	"QuestionDescription": "Rate each member of your team on the degree to which they have needed your assistance or the...",
+	"QuestionDescription": "Engagement",
 	"DisplayLogic": {
 	  "0": {
 		"0": {
@@ -38,14 +38,13 @@
 		  "Type": "Expression"
 		},
 		"1": {
-		  "ChoiceLocator": "q://QID7/SelectableChoice/1",
+		  "ChoiceLocator": "q://QID10/SelectableChoice/1",
 		  "Conjuction": "And",
-		  "Description": "<span class=\"ConjDesc\">And</span> <span class=\"QuestionDesc\">Have any of your teammates needed an unreasonable amount of assistance to complete their assigned...</span> <span class=\"LeftOpDesc\">Yes</span> <span class=\"OpDesc\">Is Selected</span> ",
-		  "LeftOperand": "q://QID7/SelectableChoice/1",
+		  "LeftOperand": "q://QID10/SelectableChoice/1",
 		  "LogicType": "Question",
 		  "Operator": "Selected",
-		  "QuestionID": "QID7",
-		  "QuestionIDFromLocator": "QID7",
+		  "QuestionID": "QID10",
+		  "QuestionIDFromLocator": "QID10",
 		  "QuestionIsInLoop": "no",
 		  "Type": "Expression"
 		},
@@ -66,13 +65,13 @@
 	"Language": [],
 	"Answers": {
 	  "1": {
-		"Display": "Always needs assistance / relies on others to do the work"
+		"Display": "Completely diengages from all team conversation"
 	  },
 	  "2": {
-		"Display": "Usually needs assistance"
+		"Display": "Often disengages from team conversation"
 	  },
 	  "3": {
-		"Display": "Rarely or never needs assistance"
+		"Display": "Generally engages with the team appropriately most of the time"
 	  }
 	},
 	"AnswerOrder": [

@@ -55,6 +55,14 @@
             },
             @ReliabilityRefs@,
             {
+              "Type": "Question",
+              "QuestionID": "QID9"
+            },
+            {
+              "Type": "Page Break"
+            },
+            @RoleRefs@,
+            {
               "Type": "Page Break"
             },
             @AssistOthersRefs@,
@@ -89,6 +97,14 @@
             },
             @ListeningRefs@,
             @ListeningRespondRefs@,
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID10"
+            },
+            @EngagementRefs@,
             {
               "Type": "Page Break"
             },
@@ -517,11 +533,103 @@
         "QuestionID": "QID8"
       }
     },
+	{
+	  "SurveyID": "SV_cAOa80tDAZqCZEy",
+	  "Element": "SQ",
+	  "PrimaryAttribute": "QID9",
+	  "SecondaryAttribute": "Have any of your teammates taken over the roles or responsibilities of others without asking?",
+	  "TertiaryAttribute": null,
+	  "Payload": {
+		"QuestionText": "Have any of your teammates taken over the roles or responsibilities of others without asking?",
+		"DataExportTag": "Q9",
+		"QuestionType": "MC",
+		"Selector": "SAVR",
+		"SubSelector": "TX",
+		"DataVisibility": {
+		  "Private": false,
+		  "Hidden": false
+		},
+		"Configuration": {
+		  "QuestionDescriptionOption": "UseText"
+		},
+		"QuestionDescription": "Have any of your teammates taken over the roles or responsibilities of others without asking?",
+		"Choices": {
+		  "1": {
+			"Display": "Yes"
+		  },
+		  "2": {
+			"Display": "No, each member of the team respects and affirms the roles of others."
+		  }
+		},
+		"ChoiceOrder": [
+		  "1",
+		  "2"
+		],
+		"Validation": {
+		  "Settings": {
+			"ForceResponse": "ON",
+			"ForceResponseType": "ON",
+			"Type": "None"
+		  }
+		},
+		"Language": [],
+		"NextChoiceId": 3,
+		"NextAnswerId": 1,
+		"QuestionID": "QID9"
+	  }
+	},
+	{
+	  "SurveyID": "SV_cAOa80tDAZqCZEy",
+	  "Element": "SQ",
+	  "PrimaryAttribute": "QID10",
+	  "SecondaryAttribute": "Have any of your teammates been disengaged from team meetings or conversations?",
+	  "TertiaryAttribute": null,
+	  "Payload": {
+		"QuestionText": "Have any of your teammates been disengaged from team meetings or conversations?",
+		"DataExportTag": "Q10",
+		"QuestionType": "MC",
+		"Selector": "SAVR",
+		"SubSelector": "TX",
+		"DataVisibility": {
+		  "Private": false,
+		  "Hidden": false
+		},
+		"Configuration": {
+		  "QuestionDescriptionOption": "UseText"
+		},
+		"QuestionDescription": "Have any of your teammates been disengaged from team meetings or conversations?",
+		"Choices": {
+		  "1": {
+			"Display": "Yes"
+		  },
+		  "2": {
+			"Display": "No, each member of the team is engaged in team meetings and conversations."
+		  }
+		},
+		"ChoiceOrder": [
+		  "1",
+		  "2"
+		],
+		"Validation": {
+		  "Settings": {
+			"ForceResponse": "ON",
+			"ForceResponseType": "ON",
+			"Type": "None"
+		  }
+		},
+		"Language": [],
+		"NextChoiceId": 3,
+		"NextAnswerId": 1,
+		"QuestionID": "QID10"
+	  }
+	},
 	@Reliability@,
+	@Role@,
 	@AssistOthers@,
 	@Reminders@,
 	@Assistance@,
     @Listening@,
-    @ListeningRespond@
+    @ListeningRespond@,
+    @Engagement@
   ]
 }

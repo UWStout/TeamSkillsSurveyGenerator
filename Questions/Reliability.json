@@ -2,10 +2,10 @@
   "SurveyID": "SV_cAOa80tDAZqCZEy",
   "Element": "SQ",
   "PrimaryAttribute": "@QID@",
-  "SecondaryAttribute": "Rate each member of your team on how reliably he or she does the work that has been assigned. In...",
+  "SecondaryAttribute": "Rate each member of your team on how reliably they do the work that has been assigned. In...",
   "TertiaryAttribute": null,
   "Payload": {
-	"QuestionText": "Rate each member of your team on how reliably he or she does the work that has been assigned.&nbsp; In addition to rating your teammates, you should also assess yourself where you see your own name.&nbsp; You do not need to rate any individual on this list who either didn't have responsibilities on your team for this sprint, or whom you didn't work closely enough with to be able to assess their contributions.",
+	"QuestionText": "Rate each member of your team on how reliably they do the work that has been assigned.&nbsp; In addition to rating your teammates, you should also assess yourself where you see your own name.&nbsp; You do not need to rate any individual on this list who either didn't have responsibilities on your team for this sprint, or whom you didn't work closely enough with to be able to assess their contributions.",
 	"DefaultChoices": false,
 	"DataExportTag": "@QTag@",
 	"QuestionType": "Matrix",
@@ -23,7 +23,7 @@
 	  "WhiteSpace": "OFF",
 	  "MobileFirst": true
 	},
-	"QuestionDescription": "Rate each member of your team on how reliably he or she does the work that has been assigned. In...",
+	"QuestionDescription": "Rate each member of your team on how reliably they do the work that has been assigned. In...",
 	"DisplayLogic": {
 	  "0": {
 		"0": {
